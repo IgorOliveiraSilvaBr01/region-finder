@@ -1,0 +1,122 @@
+body {
+    background-color: var(--bg-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: var(--white-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+main>h1 {
+    max-width: 650px;
+    text-align: center;
+    color: var(--neutral-color);
+}
+
+main>h1>span {
+    color: var(--primary-color);
+}
+
+main>p {
+    color: #666;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.search-container>input {
+    outline: none;
+    color: var(--white-color);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-container>button {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.search-container>button:hover {
+    background-color: #e0e0e0;
+}
+
+#resultado {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 650px;
+    display: none;
+}
+
+#resultado.ativo {
+    display: block;
+    margin-bottom: 60px;
+    margin-top: 30;
+}
+
+#resultado h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+#resultado p {
+    margin-bottom: 10px;
+    color: var(--neutral-color);
+}
+
+#resultado h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--neutral-color);
+}
+
+#resultado ul {
+    list-style-position: inside;
+    color: #555;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.erro {
+    color: #d93025 !important;
+    font-weight: bold;
+}
